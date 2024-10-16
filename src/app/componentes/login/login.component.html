@@ -1,0 +1,44 @@
+<section class="componente-login">
+    <div class="header">
+        <span class="titulo">Finanças Pessoais</span>
+        <ul>
+            <li>
+                <a href="#"><img src="../../../assets/suporte.svg" alt="suporte.svg-img">Suporte</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+
+        <div class="login-box">
+            
+            <img class="img-titulo" src="../../../assets/login.svg" alt="login.svg-img">
+            <span class="titulo">Login</span>
+            <br><br>
+            <label for="login">Usuário:</label>
+            <br>
+            <input type="text" id="login" maxlength="20">
+            <br>
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" id="senha" maxlength="50">
+            <br>
+            <label for="ano">Ano:</label>
+            <br>
+            <select id="ano">
+                <option value="" hidden></option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+            <br><br>
+            <button (click)="Login()"><img src="../../../assets/check.svg" alt="check.svg-img">Login</button>            
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="conteudo">
+            <span>{{mensagemModal}}</span>
+            <button (click)="closeModal()">X</button>
+        </div>
+    </div>
+</section>
