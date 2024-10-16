@@ -1,1 +1,25 @@
-<p>main works!</p>
+<section class="componente-main">
+    <header>
+        <span class="titulo">Finanças Pessoais</span>
+        <ul>
+            <li><a href="#"><img src="../../../assets/suporte.svg" alt="suporte.svg-img">Suporte</a></li>
+        </ul>
+    </header>
+    <main>
+        <nav>
+            <span>Bem-Vindo, {{usuario}}!</span>
+            <ul>
+                <li><a href="#"><img src="../../../assets/menu.svg" alt="menu.svg-img">Menu</a></li>
+                <li><a href="#"><img src="../../../assets/inicio.svg" alt="inicio.svg-img">Início</a></li>
+                <li><a href="#"><img src="../../../assets/movimentacoes.svg" alt="movimentacoes.svg-img">Movimentações</a></li>
+                <li><a href="#"><img src="../../../assets/relatorios.svg" alt="relatorios.svg-img">Relatórios</a></li>
+                <li><a href="#"><img src="../../../assets/categorias.svg" alt="categorias.svg-img">Categorias</a></li>
+                <li><a [routerLink]="['/bancos']"><img src="../../../assets/bancos.svg" alt="bancos.svg-img">Bancos</a></li>
+            </ul>
+            <div class="rodape">
+                <button><img src="../../../assets/sair.svg" alt="asir.svg-img">Sair</button>
+            </div>
+        </nav>
+        <router-outlet></router-outlet>
+    </main>
+</section>
