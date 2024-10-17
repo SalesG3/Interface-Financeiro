@@ -16,38 +16,80 @@
 .ferramentas{
     display: inline-flex;
     width: 100%;
+    border-bottom: 1px solid gray;
+    
+    & button {
+        width: 8rem;
+        height: 1.5rem;
+        margin-bottom: .5rem;
+
+        border: 1px solid gray;
+        border-radius: 2px;
+        transition: .3s;
+
+        background: linear-gradient(to top, lightgray, white);
+        box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.5);
+    }
+
+    & button:hover {
+        filter: brightness(.9);
+        cursor: pointer;
+    }
     
     & .crud {
         display: flex;
-        width: 62.5%;
+        width: 60%;
         justify-content: space-evenly;
-    
-        & button {
-            width: 8rem;
-            height: 1.5rem;
-    
-            border: 1px solid gray;
-            border-radius: 2px;
-    
-            background: linear-gradient(to top, lightgray, white);
-            box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.5);
-        }
     }
     
     & .salvar {
-        display: flex;
-        width: 37.5%;
+        display: none;
+        width: 30%;
+        margin-left: 10%;
         justify-content: space-evenly;
+    }
+}
 
-        & button {
-            width: 8rem;
-            height: 1.5rem;
-    
-            border: 1px solid gray;
-            border-radius: 2px;
-    
-            background: linear-gradient(to top, lightgray, white);
-            box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.5);
-        }
+.tabela {
+    display: none;
+    width: 100%;
+    height: 72vh;
+    margin: .5rem 1.25rem 0rem 1.25rem;
+    border-collapse: collapse;
+
+    & thead tr {
+        font: bold 1rem 'Calibri';
+        height: 1.25rem;
+        background: linear-gradient(to top, lightgray, white);
+        text-align: left;
+    }
+
+    & tbody tr {
+        font: normal 0.9rem 'Calibri';
+        height: 1.25rem;
+        text-align: left;
+    }
+
+    & td, th {
+        border: 1px solid gray;
+        padding-left: .5rem;
+    }
+}
+
+/* Colunas da Grid */
+.codigo { width: 5rem; }
+.banco { width: 15rem; }
+.descricao { width: 35rem; }
+.limite { width: 8rem; }
+
+.registro {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    & .dados {
+        width: 60%;
+        background-color: #DEE7E7;
     }
 }

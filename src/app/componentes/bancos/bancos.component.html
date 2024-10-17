@@ -7,16 +7,14 @@
             <button>Alterar</button>
             <button>Consultar</button>
             <button>Excluir</button>
-            <button>Copiar</button>
         </div>
-        <div class="salvar" hidden >
-            <button>Salvar +</button>
+        <div class="salvar">
             <button>Salvar</button>
             <button>Cancelar</button>
         </div>
     </div>
 
-    <table>
+    <table class="tabela">
         <thead>
             <tr>
                 <th class="codigo">Código:</th>
@@ -25,5 +23,38 @@
                 <th class="limite">Limite:</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+            <tr>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+            <tr>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+        </tbody>
     </table>
+
+    <div class="registro">
+        <div class="dados">
+            <span>Modo: {{metodo}}</span><br><br>
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo">
+            <label for="banco">Banco:</label>
+            <input type="text" id="banco">
+            <br>
+            <label for="limite">Limite:</label>
+            <input type="text" id="limite">
+        </div>
+    </div>
 </section>
